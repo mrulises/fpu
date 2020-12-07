@@ -1,0 +1,19 @@
+----------------------------------------------------------
+--	AUTOR: ULISES MARTINEZ RODRIGUEZ
+--	DATE: 2020-11-28
+--	DESCRIPTION: COMPUERTA NOT DE BITS
+----------------------------------------------------------
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY NOT_10_BITS IS
+	PORT(
+		I:	IN	STD_LOGIC_VECTOR(9 DOWNTO 0);
+		O:	OUT	STD_LOGIC_VECTOR(9 DOWNTO 0)
+	);
+END ENTITY;
+
+ARCHITECTURE DATAFLOW OF NOT_10_BITS IS
+BEGIN
+	O <= NOT(I);
+END ARCHITECTURE;
